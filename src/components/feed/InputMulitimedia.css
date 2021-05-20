@@ -1,0 +1,20 @@
+.inputMulitimedia {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px;
+    color: gray;
+    cursor: pointer;
+    
+}
+
+.inputMulitimedia:hover {
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.inputMulitimedia > h4{
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
