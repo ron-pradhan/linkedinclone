@@ -1,11 +1,10 @@
 .sidebar{
     position: sticky;
-    top: 100px;
+    top: 50px;
     flex: 0.2;
     border-radius: 10px;
     text-align:center;
     height: fit-content;
-    margin-left: 10%;
 }
 .sidebar__top {
     display: flex;
@@ -36,6 +35,7 @@
 }
 .sidebar__avatar {
     margin-bottom: 10px;
+    background-color: #0077b7 !important;
 }
 .sidebar__stats {
     padding: 10px;

@@ -12,8 +12,11 @@ import { db } from '../../firebase'
 import firebase from 'firebase'
 
 import './Feed.css'
+import { useSelector } from 'react-redux';
+import { selectUser } from '../../features/userSlice';
 
 function FeedPost() {
+    const user = useSelector(selectUser)
     const [input, setInput] = useState('')
     const [posts, setPosts] = useState([])
 
@@ -33,8 +36,8 @@ function FeedPost() {
     const sendPost = (e) => {
         e.preventDefault()
         db.collection('posts').add({
-            name: 'Ronit Pradhan',
-            description: 'React Developer',
+            name: user.displayName,
+            description: user.email,
             message: input,
             timestamp: firebase.firestore.FieldValue.serverTimestamp()
         })

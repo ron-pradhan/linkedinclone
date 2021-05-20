@@ -11,7 +11,7 @@ import StorageIcon from '@material-ui/icons/Storage';
 import { useDispatch } from 'react-redux';
 import HeaderOptions from './HeaderOptions';
 import { auth } from '../../firebase'
-import { logout } from '../../features/userSlice';
+import { logout, } from '../../features/userSlice';
 
 function Header() {
     const dispatch = useDispatch()
@@ -36,7 +36,7 @@ function Header() {
                 <HeaderOptions title="Jobs" Icon={BusinessCenterIcon}/>
                 <HeaderOptions title="Messaging" Icon={ChatIcon}/>
                 <HeaderOptions title="Notification" Icon={NotificationIcon}/>
-                <HeaderOptions avatar="https://qphs.fs.quoracdn.net/main-thumb-119430574-200-nutznivodnvmhxawwalbfoqdbriiwnrl.jpeg" title="Me"
+                <HeaderOptions avatar={true} title="Me"
                 onClick={logoutApp}/>
                 
             </div>

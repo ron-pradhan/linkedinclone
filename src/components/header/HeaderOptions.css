@@ -18,3 +18,10 @@
     height: 25px !important;
     width: 25px !important;
 }
+
+.headerOptions__avatar {
+    object-fit: contain;
+    height: 25px !important;
+    width: 25px !important;
+    background-color:#0077b7 !important;
+}

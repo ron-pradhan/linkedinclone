@@ -12,7 +12,7 @@ function Post({name, description, message}) {
     return (
         <div className="post">
             <div className="post__header">
-                <Avatar />
+                <Avatar className="post__avatar">{name[0].toUpperCase()}</Avatar>
                 <div className="post__info">
                     <h3>{name}</h3>
                     <p>{description}</p>
